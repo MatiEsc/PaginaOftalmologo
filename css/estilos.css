@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+#fondoEncabezado{
+    background-color: #61a5c2;
+}
+#fondoPantalla{
+    background-color: #a9d6e5;
+}
+.fondoAzul{
+    background-color: #2a6f97
+}
+
+.letraBlanca{
+    color:aliceblue
+}
+
+.letraChica{
+    font-size: small;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+h1{
+    background-color: #2a6f97;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+}
+
+.derechaLogo{
+    text-align: right;
+    list-style: none;
+    margin: 0;
+    padding: 10;
+    display: flex;
+    margin-right: 20px;
+    text-decoration: none;
+    
+}
+
+p{
+    font-size: 2.5rem;
+}
+
+li{
+    margin-right: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.h1footer{
+    font-size: x-small;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.contenedorImagenLogo {
+    float: left; 
+    margin-right: 10px; 
+    border-radius: 5%;
+}
+
+.contenedorImagenIzquierda {
+    float: left; 
+    margin-right: 10px; 
+    border-radius: 5%;
+}
+
+.contenedorImagenDerecha {
+    float:right;
+    margin-left: 10px;
+    border-radius: 5%;
+}
+
+.contenedorMaps{
+    float:left;
+    margin-right: 10px; 
+    border-radius: 5%;
+}
+
+.boton{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
