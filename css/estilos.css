@@ -89,8 +89,9 @@ p{
 }
 
 .contenedorImagenIzquierda {
+    
     display: inline-block;
-    margin-top: 1rem;
+    margin-top: 10rem;
     margin-left: 2.5rem; 
     margin-right: 2.5rem;
     margin-bottom: 2.5rem;
@@ -98,33 +99,38 @@ p{
 }
 
 .contenedorPrimerParrafo{
+    width: 60rem;
     display: inline-block;
-    text-align: center;
-    margin-top: 0rem;
-    margin-right: 10rem;
-    margin-left: 40rem;
+    text-align: justify;
+    margin-top: 2.5rem;
+    margin-right: 0rem;
+    margin-left: 5rem;
     margin-bottom: 1.5rem;
-    
+    border-style: dashed;
 }
 
 
 .contenedorImagenDerecha {
+    
     display: inline-block;
     margin-top: 1rem;
-    margin-left: 103rem; 
-    margin-right: 2.5rem;
+    margin-left: 90rem; 
+    margin-right: 0rem;
     margin-bottom: 1.5rem;
     border-radius: 5%;
+    border-style: dashed;
 }
 
 
 .contenedorSegundoParrafo{
+    width: 60rem;
     display: inline-block;
-    text-align: center;
-    margin-top: 1rem;
-    margin-right: 40rem;
-    margin-left: 2.5rem;
+    text-align: justify;
+    margin-top: 10rem;
+    margin-right: 0rem;
+    margin-left: 12rem;
     margin-bottom: 1.5rem;
+    border-style: dashed;
     
 }
 
@@ -137,23 +143,31 @@ p{
 }
 
 .contenedorUltimoParrafo{
+    width: 30rem;
     display: inline-block;
     text-align: left;
     margin-top: 1rem;
     margin-left: 2.5rem;
-    margin-right: 10rem;
+    margin-right: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
 
-
-
 .boton{
-    display: flex;
+    display: inline-block;
     align-items: center;
     margin-left: 60rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
 }
 
+.boton1{
+    display: block;
+    align-items: center;
+    margin-left: 40rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+}
 
 
 .contenedorBotonesRedes{
