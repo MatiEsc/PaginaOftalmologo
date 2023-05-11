@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +8,139 @@
     <link rel="shortcut icon" href="../imagenes/logo.jpeg" type="image/x-icon">
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css"/>
-    
-    
+
+
     <title>Dr. Francisco Alvarez</title>
 </head>
+
 <body id="fondoPantalla">
-    <header id="fondoEncabezado" id="top-page">
+    <header id="fondoEncabezado" id="top-page" class="">
         <div>
-            <img src="../imagenes/logo.jpeg" width="80" alt="Logo">
+            <img class="contenedorImagenLogo" src="../imagenes/logo.jpeg" width="80" alt="Logo">
+        
         </div>
     <!-- menu de navegacion-->
-        <nav>
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="paginas/turnos.html">TURNOS</a></li>
-                <li><a href="patologias.html">PATOLOGIAS</a></li>
-                <li> <a href="estudios.html">ESTUDIOS</a></li>
-                <li><a href="testimonios.html">TESTIMONIOS</a></li>
-                <li><a href="sobreMi.html"> SOBRE MI</a></li>
+        <nav >
+            <ul class="nav">
+                <li class="barraNav" ><a href="../index.html">HOME</a></li>
+                <li class="barraNav" ><a href="#top-page">TURNOS</a></li>
+                <li class="barraNav" ><a href="patologias.html">PATOLOGIAS</a></li>
+                <li class="barraNav" > <a href="estudios.html">ESTUDIOS</a></li>
+                <li class="barraNav" ><a href="testimonios.html">TESTIMONIOS</a></li>
+                <li class="barraNav" ><a href="sobreMi.html"> SOBRE MI</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+
+    <div >
+        <h1 class="letraBlanca centrar">Contacto</h1>
+        <form action="">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
+    
+            <br><!--Salto de linea-->
+    
+            <label for="email">Correo electronico:</label>
+            <input type="email" name="email" id="email">
+    
+            <div><label for="">Deja tu mensaje:</label>
+                <textarea name="mensaje" id="mensaje" cols="30"
+                roes="10">
+            </textarea>
+            
+            
+            </div>
+    
+            <!--RADIO-->
+            <label for="genero:">Género</label>
+            <input type="radio" name="genero" id="genero"value="M">Masculino
+            <input type="radio" name="genero" id="genero" value="F">Femenino
+            <input type="radio" name="genero" id="genero" value="PE">Prefiero no especificar
+    
+            <br>
+            <!--CHECKBOX-->
+            <label for="terminos">Acepta términos</label>
+            <input type="checkbox" name="terminos" id="terminos">
+    
+            <label for="newletter">Newletter</label>
+            <input type="checkbox" name="newletter" id="newletter">
+            <br>
+    
+    
+            <!--Menu Despegable-->
+            <label for="pais:">País</label>
+            <select name="pais" id="pais">
+                <option value="---">---</option>
+                <option value="arg">Argentina</option>
+                <option value="uy">Uruguay</option>
+                <option value="ch">Chile</option>
+    
+            </select>
+    
+            <br>
+    
+            <!--CONJUNTO DE CAMPO-->
+    
+            <fieldset>
+                <legend>Datos de Facturacion </legend>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" required placeholder="Ingrese su nombre">
+            </fieldset>
+    
+    
+    
+            <!-- BOTONES-->
+            <input type="button" value="Funciona con JS">
+            <input type="reset" value="RESETEAR">
+            <input type="submit" value="ENVIAR FORMUALARIO">
+    
+    
+        </form>
+    </div>
+
+    <div>
+        <h1 class="letraBlanca centrar"  >Consultorio</h1>
+        <iframe class="contenedorMapsTurnos" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.2940348216143!2d-58.45160462541116!3d-34.57142587296585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5c48612dc57%3A0xee251342439a4a90!2sAguilar%202682%2C%20C1426DSN%20CABA!5e0!3m2!1ses-419!2sar!4v1683632057283!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="contenedorUltimoParrafoTurnos"> Direccion: Montañeses 2724, C.A.B.A. </p>
+       <br>
+        <p class="contenedorUltimoParrafoTurnos"> Colectivos: xxxxxxxxxxxxx</p>
+        <br>
+        <p class="contenedorUltimoParrafoTurnos"> Trenes:xxxxxxxxxxxxxxxx</p>
+    </div>
+
+
+
+
+    </main>
+
+    <footer class="fondoAzul letraBlanca centrar " >
+        <h1> Encontrame en mis redes sociales:</h1>
+        <div class="contenedorFooterTitulo" >
+            <a class="contenedorBotonesRedes" href="https://instagram.com/franciscoalvarez.oftalmologo" target="_blank">
+                <img src="../imagenes/instagram.jpg" width="30rem" alt="Instagram"> 
+            </a>
+            
+            <a class="contenedorBotonesRedes" href="https://https://www.facebook.com/francisco.alvarez.140" target="_blank">
+                <img src="../imagenes/facebook.png" width="23rem" alt="Facebook"> 
+            </a>
+            
+            <a class="contenedorBotonesRedes" href="https://https://https://www.linkedin.com/in/francisco-alvarez-a8953b65" target="_blank">
+                <img src="../imagenes/linkedin.png" width="23rem" alt="Linkedin"> 
+            </a>
+
+            <a class="contenedorBotonesRedes" href="mailto:dralvarezfrancisco@gmail.com" target="_blank">
+                <img src="../imagenes/correo.png" width="23rem" alt="Correo"> 
+            </a>
+
+            <a class="contenedorBotonesRedes" href="https://wa.me/+541154649808" target="_blank">
+                <img src="../imagenes/whatsapp.png" width="23rem" alt="Whatsapp"> 
+            </a>
+            
+        </div>
+        <h1 class="letraChica" >Dr. Francisco Alvarez - M.N. 132952 </h1>
+        <h2 class="h1footer centrar contenedorFooterTitulo"> ©Copyright 2023 - Creado por <a href="http://linkedin.com/in/matias-ezequiel-escobar-a46082259" target="_blank" >Matias Escobar</a></h2>
+
+    </footer> 
 </body>
 </html>

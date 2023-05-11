@@ -9,12 +9,53 @@ html{
 
 #fondoEncabezado{
     background-color: #61a5c2;
+    height: 10rem;
+    margin: 500rem, 0rem, 5rem, 0rem;
 }
 #fondoPantalla{
     background-color: #a9d6e5;
 }
 .fondoAzul{
     background-color: #2a6f97
+}
+/*------------CONTENEDORES------------*/
+
+.contenedorImagenLogo {
+    float: left; 
+    margin-top: 1rem;
+    margin-left: 1rem; 
+    border-radius: 5%;
+}
+
+.barraNav {
+    list-style: none;
+    margin-top: 2.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+    padding-bottom: 1.3rem;
+    display: inline-block;
+    text-decoration: none;
+}
+    
+.nav{
+    margin-top: 0rem;
+    margin-left: 25rem;
+}
+    
+li{
+    margin-right: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .letraBlanca{
@@ -35,34 +76,8 @@ h1{
     font-size: 2.5rem;
 }
 
-.derechaLogo{
-    text-align: right;
-    list-style: none;
-    margin: 0;
-    padding: 10;
-    display: flex;
-    margin-right: 20px;
-    text-decoration: none;
-    
-}
-
 p{
     font-size: 2.5rem;
-}
-
-li{
-    margin-right: 20px;
-}
-
-li a {
-    text-decoration: none;
-    color: black;
-    font-size: 2.5rem;
-}
-
-a {
-    text-decoration: none;
-    color: black;
 }
 
 .h1footer{
@@ -73,38 +88,101 @@ a {
     text-align: center;
 }
 
-.contenedorImagenLogo {
-    float: left; 
-    margin-right: 10px; 
+.contenedorImagenIzquierda {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 2.5rem; 
+    margin-right: 2.5rem;
+    margin-bottom: 2.5rem;
     border-radius: 5%;
 }
 
-.contenedorImagenIzquierda {
-    float: left; 
-    margin-right: 10px; 
-    border-radius: 5%;
+.contenedorPrimerParrafo{
+    display: inline-block;
+    text-align: center;
+    margin-top: 0rem;
+    margin-right: 10rem;
+    margin-left: 40rem;
+    margin-bottom: 1.5rem;
+    
 }
+
 
 .contenedorImagenDerecha {
-    float:right;
-    margin-left: 10px;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 103rem; 
+    margin-right: 2.5rem;
+    margin-bottom: 1.5rem;
     border-radius: 5%;
 }
 
+
+.contenedorSegundoParrafo{
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 40rem;
+    margin-left: 2.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+
 .contenedorMaps{
-    float:left;
-    margin-right: 10px; 
+    display: inline-block;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
     border-radius: 5%;
 }
+
+.contenedorUltimoParrafo{
+    display: inline-block;
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 10rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
 
 .boton{
     display: flex;
     align-items: center;
+    margin-left: 60rem;
 }
 
 
 
+.contenedorBotonesRedes{
+   margin-top: 1000rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.contenedorFooterTitulo{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
 
 
 
+/*------------pagina turnos--------*/
 
+.contenedorUltimoParrafoTurnos{
+    
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 40rem;
+    margin-right: 30rem;
+    margin-bottom: 2rem; 
+}
+.contenedorMapsTurnos{
+    display:block;
+    margin-top: 2rem;
+    margin-left: 40rem;
+    margin-right: 30rem;
+    border-radius: 5%;
+}
