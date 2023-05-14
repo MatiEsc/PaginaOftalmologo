@@ -63,7 +63,7 @@ a {
 }
 
 .letraChica{
-    font-size: small;
+    font-size: x-large;
 }
 
 body{
@@ -81,7 +81,7 @@ p{
 }
 
 .h1footer{
-    font-size: x-small;
+    font-size: small;
 }
 
 .centrar{
@@ -104,21 +104,21 @@ p{
     text-align: justify;
     margin-top: 2.5rem;
     margin-right: 0rem;
-    margin-left: 5rem;
+    margin-left: 50rem;
     margin-bottom: 1.5rem;
-    border-style: dashed;
+    
 }
 
 
 .contenedorImagenDerecha {
     
-    display: inline-block;
+    display: block;
     margin-top: 1rem;
     margin-left: 90rem; 
     margin-right: 0rem;
     margin-bottom: 1.5rem;
     border-radius: 5%;
-    border-style: dashed;
+    
 }
 
 
@@ -126,11 +126,11 @@ p{
     width: 60rem;
     display: inline-block;
     text-align: justify;
-    margin-top: 10rem;
+    margin-top: 1rem;
     margin-right: 0rem;
     margin-left: 12rem;
     margin-bottom: 1.5rem;
-    border-style: dashed;
+    
     
 }
 
@@ -147,14 +147,14 @@ p{
     display: inline-block;
     text-align: left;
     margin-top: 1rem;
-    margin-left: 2.5rem;
+    margin-left: 70rem;
     margin-right: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
 
 .boton{
-    display: inline-block;
+    display: block;
     align-items: center;
     margin-left: 60rem;
     margin-right: 0rem;
@@ -171,12 +171,23 @@ p{
 
 
 .contenedorBotonesRedes{
-   margin-top: 1000rem;
+    margin-top: 1000rem;
     margin-left: 3rem;
     margin-right: 3rem;
 }
 
+.contenedorWp{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+}
+
+.contenedorWp img{
+    border-radius: 30rem;
+}
+
 .contenedorFooterTitulo{
+    font-size: medium;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
@@ -184,6 +195,11 @@ p{
 
 
 /*------------pagina turnos--------*/
+.contenedorFormulario{
+    display: block;
+    margin-top: 2rem;
+    margin-left: 50rem;
+}
 
 .contenedorUltimoParrafoTurnos{
     
@@ -200,3 +216,77 @@ p{
     margin-right: 30rem;
     border-radius: 5%;
 }
+
+.fuente{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/*------------pagina testimonios--------*/
+
+
+.video1{
+
+    width: 60rem;
+    height: 40rem;
+    margin-top: 1rem;
+    margin-left: 60rem;
+    margin-right: 10rem;
+    margin-bottom: 1rem;
+
+}
+
+.parrafoPaciente{
+    width: 55rem;
+    margin-top: 0rem;
+    margin-left: 60rem;
+    margin-right: 05rem;
+    margin-bottom: 3rem;
+    
+}
+/*------------pagina estudios--------*/
+.bloque {
+    border: 2px solid #000;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 2.5 rem;
+    margin-right: 2.5rem;
+    margin-bottom: 2rem;
+  }
+.titulo{
+    font-size: large;
+    font-weight: bold;
+}
+
+.parrafo{
+    font-size: medium;
+}
+
+
+/*------------pagina estudios--------*/
+
+.estudios{
+    background-color: #a9d6e5;
+    margin-top: 5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+.imagenFondoDeOjos{
+    width: 60rem;
+    height: 40rem;
+    display: block;
+    margin-top: 3rem;
+    margin-left: 10rem; 
+    margin-right: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 5%;
+}
+
+.parrafoEstudios{
+    margin-left: 10rem;
+}
+
+
