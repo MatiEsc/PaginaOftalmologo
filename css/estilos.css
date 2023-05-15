@@ -20,6 +20,9 @@ html{
 }
 /*------------CONTENEDORES------------*/
 
+.fixed{
+    position: fixed;
+}
 .contenedorImagenLogo {
     float: left; 
     margin-top: 1rem;
@@ -88,33 +91,39 @@ p{
     text-align: center;
 }
 
+.contenedorIzquierdo{
+    display: ;
+}
+
 .contenedorImagenIzquierda {
     
     display: inline-block;
-    margin-top: 10rem;
-    margin-left: 2.5rem; 
-    margin-right: 2.5rem;
+    margin-top: 1.5rem;
+    margin-left: 20rem; 
+    margin-right: 1.5rem;
     margin-bottom: 2.5rem;
     border-radius: 5%;
+    
 }
 
 .contenedorPrimerParrafo{
     width: 60rem;
     display: inline-block;
     text-align: justify;
-    margin-top: 2.5rem;
-    margin-right: 0rem;
-    margin-left: 50rem;
-    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2.5rem;
+
     
 }
 
 
 .contenedorImagenDerecha {
     
-    display: block;
+    display: inline-block;
     margin-top: 1rem;
-    margin-left: 90rem; 
+    margin-left: 2.5rem; 
     margin-right: 0rem;
     margin-bottom: 1.5rem;
     border-radius: 5%;
@@ -128,7 +137,7 @@ p{
     text-align: justify;
     margin-top: 1rem;
     margin-right: 0rem;
-    margin-left: 12rem;
+    margin-left: 20rem;
     margin-bottom: 1.5rem;
     
     
@@ -137,7 +146,7 @@ p{
 
 .contenedorMaps{
     display: inline-block;
-    margin-left: 2.5rem;
+    margin-left: 20rem;
     margin-top: 1rem;
     border-radius: 5%;
 }
@@ -147,7 +156,7 @@ p{
     display: inline-block;
     text-align: left;
     margin-top: 1rem;
-    margin-left: 70rem;
+    margin-left: 2.5rem;
     margin-right: 0.5rem;
     margin-bottom: 1.5rem;
 }
@@ -156,7 +165,7 @@ p{
 .boton{
     display: block;
     align-items: center;
-    margin-left: 60rem;
+    margin-left: 10rem;
     margin-right: 0rem;
     margin-bottom: 1rem;
 }
@@ -164,7 +173,7 @@ p{
 .boton1{
     display: block;
     align-items: center;
-    margin-left: 40rem;
+    margin-left: 30rem;
     margin-right: 0rem;
     margin-bottom: 1rem;
 }
@@ -230,28 +239,35 @@ p{
     width: 60rem;
     height: 40rem;
     margin-top: 1rem;
-    margin-left: 60rem;
+    margin-left: 10rem;
     margin-right: 10rem;
     margin-bottom: 1rem;
 
 }
 
 .parrafoPaciente{
+    display: inline-block;
     width: 55rem;
     margin-top: 0rem;
-    margin-left: 60rem;
+    margin-left: 10rem;
     margin-right: 05rem;
-    margin-bottom: 3rem;
-    
+    margin-bottom: 3rem;   
 }
-/*------------pagina estudios--------*/
+
+.conenedorBloquePacientes{
+    display: inline-block;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5;
+}
+/*------------pagina patologias--------*/
 .bloque {
     border: 2px solid #000;
     border-radius: 2rem;
     padding: 1rem;
     margin-top: 1rem;
-    margin-left: 2.5 rem;
-    margin-right: 2.5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     margin-bottom: 2rem;
   }
 .titulo{
@@ -269,24 +285,31 @@ p{
 .estudios{
     background-color: #a9d6e5;
     margin-top: 5rem;
+    margin-left: 2.5rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2.5rem;
     text-decoration: underline;
 }
 
+
 .imagenFondoDeOjos{
-    width: 60rem;
-    height: 40rem;
-    display: block;
+    display: inline-block;
     margin-top: 3rem;
-    margin-left: 10rem; 
+    margin-left: 50rem; 
     margin-right: 2.5rem;
     margin-bottom: 2.5rem;
+    border-radius: 10%;    
+}
+.border{
     border-radius: 5%;
 }
 
+
 .parrafoEstudios{
-    margin-left: 10rem;
+     margin-left: 5rem;
+    border-right: 10rem;
+    margin-bottom: 5rem;
+    text-align: justify;
 }
 
 
