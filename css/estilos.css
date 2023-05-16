@@ -243,7 +243,7 @@ p{
     width: 60rem;
     height: 40rem;
     margin-top: 1rem;
-    margin-left: 10rem;
+    margin-left: 3rem;
     margin-right: 10rem;
     margin-bottom: 1rem;
 
@@ -253,16 +253,16 @@ p{
     display: inline-block;
     width: 55rem;
     margin-top: 0rem;
-    margin-left: 10rem;
-    margin-right: 05rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
     margin-bottom: 3rem;   
 }
 
 .conenedorBloquePacientes{
     display: inline-block;
     margin-top: 2rem;
-    margin-left: 5rem;
-    margin-right: 5;
+    margin-left: 3rem;
+    margin-right: 3;
 }
 /*------------pagina patologias--------*/
 .bloque {
