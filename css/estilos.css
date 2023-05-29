@@ -8,57 +8,108 @@ html{
 }
 
 #fondoEncabezado{
-    background-color: #61a5c2;
+    position: sticky;
+    background-color: #cad2c5;
     height: 10rem;
-    margin: 500rem, 0rem, 5rem, 0rem;
 }
+
 #fondoPantalla{
-    background-color: #a9d6e5;
+    background-color:whitesmoke;
 }
 .fondoAzul{
-    background-color: #2a6f97
+    background-color: #84a98c
 }
-/*------------CONTENEDORES------------*/
+/*
+#fondoEncabezado{
+    position: sticky;
+    background-color: #84a98c;
+    height: 10rem;
+}
 
-.fixed{
-    position: fixed;
+#fondoPantalla{
+    background-color: #cad2c5;
 }
+.fondoAzul{
+    background-color: #52796f
+}
+*/
+
+.imagenFavicon{
+    border-radius:30px;
+}
+/* ------barra navegacion--------*/
+
+.menu {
+    top: 0rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .contenedorImagenLogo {
-    float: left; 
-    margin-top: 1rem;
-    margin-left: 1rem; 
-    border-radius: 5%;
-}
-
-.barraNav {
-    list-style: none;
-    margin-top: 2.5rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 3rem;
-    padding-bottom: 1.3rem;
     display: inline-block;
-    text-decoration: none;
+    vertical-align: text-top;
+    border-radius: 50px;
+    height: 80px;
+    width: auto;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
 }
+
+
+
+/*---------*/
+
+
+
+.barraNav{
+    display: flex;
+    justify-content:end
+}
+
+  
+.flex{
+    display: flex;
     
+}
+
+.linkNav{
+    background-color: #cad2c5;
+    border-radius: 30px;
+    width: 150%;
+    -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+    list-style: none;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 0.5rem;
+    margin-left: 3rem;
+    margin-bottom: 0.5rem;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: end;
+}
+
+
 .nav{
-    margin-top: 0rem;
-    margin-left: 25rem;
-}
-    
-li{
-    margin-right: 20px;
+    list-style: none;
+    color: #000;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
-li a {
-    text-decoration: none;
-    color: black;
-    font-size: 2.5rem;
+.nav a {
+    text-decoration: none; 
+    color:#000;
+    align-items: center;
+    font-size: x-large;
+    margin-top: 50px;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .letraBlanca{
@@ -74,7 +125,13 @@ body{
 }
 
 h1{
-    background-color: #2a6f97;
+    background-color: #84a98c;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+}
+
+h2{
+    background-color: #84a98c;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2.5rem;
 }
@@ -82,6 +139,51 @@ h1{
 p{
     font-size: 2.5rem;
 }
+
+.seccion{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen1{
+    display: flex;
+    border-radius: 5%;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.texto1{
+    display: flex;
+    width: 60rem;
+    height: 40rem;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.imagen2{
+    display: flex;
+    border-radius: 5%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.texto2{
+    display: flex;
+    width: 60rem;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*------------------------*/
+
+
+
 
 .h1footer{
     font-size: small;
@@ -91,98 +193,52 @@ p{
     text-align: center;
 }
 
-.contenedorIzquierdo{
-    display: ;
-}
-
-.contenedorImagenIzquierda {
-    
-    display: inline-block;
-    margin-top: 1.5rem;
-    margin-left: 20rem; 
-    margin-right: 1.5rem;
-    margin-bottom: 2.5rem;
-    border-radius: 5%;
-    
-}
-
-.contenedorPrimerParrafo{
-    width: 60rem;
-    display: inline-block;
-    text-align: justify;
-    margin-top: 1rem;
-    margin-right: 1.5rem;
-    margin-left: 2.5rem;
-    margin-bottom: 2.5rem;
-
-    
-}
-
-
-.contenedorImagenDerecha {
-    
-    display: inline-block;
-    margin-top: 1rem;
-    margin-left: 2.5rem; 
-    margin-right: 0rem;
-    margin-bottom: 1.5rem;
-    border-radius: 5%;
-    
-}
-
-
-.contenedorSegundoParrafo{
-    width: 60rem;
-    display: inline-block;
-    text-align: justify;
-    margin-top: 1rem;
-    margin-right: 0rem;
-    margin-left: 20rem;
-    margin-bottom: 1.5rem;
-    
-    
-}
-
-
-.contenedorMaps{
-    display: inline-block;
-    margin-left: 20rem;
-    margin-top: 1rem;
-    border-radius: 5%;
-}
 
 .contenedorUltimoParrafo{
-    width: 30rem;
-    display: inline-block;
-    text-align: left;
+    width: 60rem;
+    display: flex;
+    text-align: justify;
     margin-top: 1rem;
     margin-left: 2.5rem;
     margin-right: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    font-size: x-large;
 }
+/* Etiquetas para los parrafos*/
 
-
-.boton{
+.contenedor {
+    position: relative;
+  }
+  
+  .boton {
+    display: none;
+    width: 60rem;
+    height: 40rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: xx-large;
+    color: black;
+  }
+  
+  .contenedor:hover .boton {
     display: block;
-    align-items: center;
-    margin-left: 10rem;
-    margin-right: 0rem;
-    margin-bottom: 1rem;
-}
-
-.boton1{
-    display: block;
-    align-items: center;
-    margin-left: 30rem;
-    margin-right: 0rem;
-    margin-bottom: 1rem;
-}
+    background-color:whitesmoke;
+  }
 
 
 .contenedorBotonesRedes{
     margin-top: 1000rem;
     margin-left: 3rem;
     margin-right: 3rem;
+}
+
+
+
+.border img{
+    width: 5rem;
+    border-radius: 25%;
+
 }
 
 .contenedorWp{
@@ -192,9 +248,12 @@ p{
 }
 
 .contenedorWp img{
-    border-radius: 30rem;
+    border-radius: 25%;
 }
 
+.fixed{
+    position: fixed;
+}
 .contenedorFooterTitulo{
     font-size: medium;
     margin-top: 1rem;
@@ -238,35 +297,92 @@ p{
 /*------------pagina testimonios--------*/
 
 
-.video1{
-
-    width: 60rem;
-    height: 40rem;
-    margin-top: 1rem;
-    margin-left: 3rem;
-    margin-right: 10rem;
-    margin-bottom: 1rem;
-
+.containerVideos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "video1 paciente1"
+      "paciente2 video2"
+      "video3 paciente3"
+      "paciente4 video4";
 }
 
-.parrafoPaciente{
-    display: inline-block;
-    width: 55rem;
-    margin-top: 0rem;
-    margin-left: 5rem;
-    margin-right: 3rem;
-    margin-bottom: 3rem;   
+.video1 {
+    grid-area: video1;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
 }
 
-.conenedorBloquePacientes{
-    display: inline-block;
-    margin-top: 2rem;
-    margin-left: 3rem;
-    margin-right: 3;
+.paciente1 {
+    grid-area: paciente1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40rem;
+    height: auto;
+    margin-left: 2rem;
 }
+
+
+
+.video2 {
+    grid-area: video2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.paciente2 {
+    grid-area: paciente2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.video3 {
+    grid-area: video3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;}
+
+.paciente3 {
+    grid-area: paciente3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40rem;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.video4 {
+    grid-area: video4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.paciente4 {
+    grid-area: paciente4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
 /*------------pagina patologias--------*/
 .bloque {
-    border: 2px solid #000;
     border-radius: 2rem;
     padding: 1rem;
     margin-top: 1rem;
@@ -287,7 +403,7 @@ p{
 /*------------pagina estudios--------*/
 
 .estudios{
-    background-color: #a9d6e5;
+    background-color: #cad2c5;
     margin-top: 5rem;
     margin-left: 2.5rem;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
