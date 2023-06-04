@@ -40,8 +40,12 @@ html{
 /* ------barra navegacion--------*/
 
 
-.menu {  display: grid;
-    grid-template-columns: 0.3fr 1.7fr 0.3fr;
+.menu {  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.09fr 2fr 0.3fr;
     grid-template-rows: 0.3fr;
     grid-auto-rows: 1fr;
     gap: 0px 0px;
@@ -51,24 +55,20 @@ html{
   }
   
   .logo { grid-area: logo; 
-    border-radius: 50px ;
+    border-radius: 40% ;
 }
   
   .barraNavegacion { grid-area: barraNavegacion; 
-align-items: center;
-justify-content: end;}
+    align-items: center;
+    justify-content: center;
+    background-color: #cad2c5;
+    width: 110%;
+}
   
   .vacia { grid-area: vacia; }
-  
-/*
 
-.menu {
-    top: 0rem;
-    display: flex;
-    justify-content: flex-start;
-}
 
-.contenedorImagenLogo {
+.imagenLogo {
     display: inline-block;
     vertical-align: text-top;
     border-radius: 50px;
@@ -78,55 +78,26 @@ justify-content: end;}
     margin-top: 0.5rem;
 }
 
-*/
-
-/*---------*/
-
-
-/*
-.barraNav{
-    display: flex;
-    justify-content:end
-}
-*/
-  
 .flex{
     display: flex;
     
 }
 
-.linkNav{
+.barraMenu{
     background-color: #cad2c5;
     border-radius: 30px;
-    width: 150%;
+    width: 70%;
     -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
     box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
     list-style: none;
-    margin-left: 0rem;
-    margin-right: 0rem;
+    font-size:x-large;
     margin-top: 2.5rem;
     padding-top: 0.5rem;
     margin-bottom: 0.5rem;
-    margin-right: 5rem;
-    margin-left: 5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     display: flex;
-    justify-content: end;
-}
-
-
-.nav{
-    list-style: none;
-    color: #000;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-}
-
-.nav a {
-    text-decoration: none; 
-    color:#000;
-    align-items: center;
-    font-size: x-large;
-    margin-top: 50px;
+    justify-content: space-between;
 }
 
 
@@ -205,8 +176,6 @@ p{
 }
 
 /*------------------------*/
-
-
 
 
 .h1footer{
@@ -295,11 +264,35 @@ p{
 /*------------pagina turnos--------*/
 .contenedorFormulario{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: block;
+    display: flex;
+    justify-content: center;
     margin-top: 2rem;
-    margin-left: 50rem;
+    font-size: large;
 }
 
+.botonTamanio{
+    font-size: large;
+    background-color: #84a98c;
+    border-color: #84a98c;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.botonTamanio:hover,
+.enviarBtn:hover {
+    background-color: #52796f; 
+    border-color: #52796f; 
+}
+
+
+.cartel{
+    font-size: xx-large;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: whitesmoke;
+    color: black;
+
+}
 .contenedorUltimoParrafoTurnos{
     
     text-align: left;
@@ -309,7 +302,8 @@ p{
     margin-bottom: 2rem; 
 }
 .contenedorMapsTurnos{
-    display:block;
+    display:flex;
+    justify-content: center;
     margin-top: 2rem;
     margin-left: 40rem;
     margin-right: 30rem;

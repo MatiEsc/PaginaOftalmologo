@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon-->
     <link rel="shortcut icon" href="../imagenes/logo.jpeg" type="image/x-icon">
+
+    <!--Bootstrap-->
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
     <!--CSS-->
     <link rel="stylesheet" href="../css/estilos.css"/>
 
@@ -13,31 +18,50 @@
     <title>Dr. Francisco Alvarez</title>
 </head>
 
-
 <body id="fondoPantalla">
     <header id="fondoEncabezado"  id="top-page" class="menu">
         <!--logo encabezado-->
     
-            <div>
-                <a href="../index.html">
-                    <img class="contenedorImagenLogo " src="../imagenes/logo.jpeg" width="80" alt="Logo">
-                </a>
+    
+        <div class="logo">
+            <a href="../index.html">
+                <img class="imagenLogo " src="../imagenes/logo.jpeg" width="80" alt="Logo">
+            </a>
+        </div>
+        
+            <!-- menu de navegacion-->
+        
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+        
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse barraNavegacion" id="navbarNav">
+                <ul class="navbar-nav barraMenu">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="turnos.html">TURNOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="patologias.html">PATOLOGIAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top-page">TESTIMONIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreMi.html">SOBRE MI</a>
+                    </li>
+                </ul>
             </div>
             
-    
-        <!-- menu de navegacion-->
-    
-            <nav class="centrado">
-                <ul class="barraNav flex linkNav ">
-                    <li class="nav" ><a href="../index.html">HOME</a></li>
-                    <li class="nav" ><a href="turnos.html">TURNOS</a></li>
-                    <li class="nav" ><a href="patologias.html">PATOLOGIAS</a></li>
-                    <li class="nav" > <a href="estudios.html">ESTUDIOS</a></li>
-                    <li class="nav" ><a href="#top-page">TESTIMONIOS</a></li>
-                    <li class="nav" ><a href="sobreMi.html"> SOBRE MI</a></li>
-                </ul>
-            </nav>
+        </nav>
         
+        <div class="vacia"></div>
+        </div>
+    
     </header>
     <main>
         <div>
@@ -114,5 +138,7 @@
         <h2 class="h1footer centrar contenedorFooterTitulo"> ©Copyright 2023 - Creado por <a href="http://linkedin.com/in/matias-ezequiel-escobar-a46082259" target="_blank" >Matias Escobar</a></h2>
     
     </footer>
+<!--Script de Bootstrap-->
+<script src="../ProyectoDesarrolloWebCoder/js/bootstrap.min.js"></script>
 </body>
 </html>
