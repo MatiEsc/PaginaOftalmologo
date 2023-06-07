@@ -51,21 +51,22 @@ html{
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "logo barraNavegacion vacia";
-  }
-  
-  .logo { grid-area: logo; 
-    border-radius: 40% ;
-}
-  
-  .barraNavegacion { grid-area: barraNavegacion; 
+        "logo barraNavegacion vacia";
+        }
+
+
+    .logo { grid-area: logo; 
+        border-radius: 40% ;
+    }
+
+    .barraNavegacion { grid-area: barraNavegacion; 
     align-items: center;
     justify-content: center;
     background-color: #cad2c5;
     width: 110%;
-}
-  
-  .vacia { grid-area: vacia; }
+    }
+
+    .vacia { grid-area: vacia; }
 
 
 .imagenLogo {
@@ -264,11 +265,77 @@ p{
 
 /*-------PRIMER PAGINA RESPONSIVE-----*/
 /*--tablets--*/
-@media screen and (max-width: 768px) and (min-width:480px) {
-    header {
+@media screen and (max-width: 768px) and (min-width:501px) {
+    .imagen1,
+    .imagen2 {
+        max-width: 100%;
+        height: auto;        
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .texto1,
+    .texto2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+    
+    .seccion1{
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+    }
 
+    
+    .mapa{
+
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-left: 5rem;
+        
+    }
+    .contenedorUltimoParrafo {
+        order: 1;
+        text-align: center; 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
     }
 }
+
+
+/*-----CELULAR---*/
+
+@media screen and (max-width: 500px) {
+    .seccion {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen2 {
+        order: -2; 
+        width: 100%; 
+        margin-bottom: 1rem; 
+    }
+
+    .texto2 {
+        order:1;
+        text-align: center; 
+        width: 100%; 
+        margin-bottom: 1rem; 
+    }
+
+    .contenedorUltimoParrafo {
+        text-align: center; 
+    }
+}
+
+
 
 /*------------pagina turnos--------*/
 .contenedorFormulario{
@@ -433,23 +500,7 @@ p{
   margin-left: 20rem;
   font-size: x-large;
 }
-/*
-  background-color: #cad2c5;
-  border-radius: 30px;
-  width: 70%;
-  -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
-  box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
-  list-style: none;
-  font-size:x-large;
-  margin-top: 2.5rem;
-  padding-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  display: flex;
-  justify-content: space-between;
 
-*/
 .titulo{
     font-size: large;
     font-weight: bold;
@@ -492,5 +543,3 @@ p{
     margin-bottom: 5rem;
     text-align: justify;
 }
-
-
