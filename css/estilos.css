@@ -238,7 +238,7 @@ p{
 
 
 
-.border img{
+.borderr img{
     width: 5rem;
     border-radius: 25%;
 
@@ -306,6 +306,7 @@ p{
         align-items: center;
         margin-bottom: 1rem;
     }
+
 }
 
 
@@ -532,8 +533,9 @@ p{
     margin-bottom: 2.5rem;
     border-radius: 10%;    
 }
-.border{
+.borderr{
     border-radius: 5%;
+    text-decoration: none;
 }
 
 
