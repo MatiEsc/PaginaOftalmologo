@@ -321,14 +321,14 @@ p{
         margin-left: 1rem;
         margin-right: 1rem;
         align-items: center;
-        text-align: center; 
+        text-align: justify; 
         width: 80%; 
         margin-bottom: 1rem; 
     }
 
     .boton {
         display: none;
-        width: 100%;
+        width: 80%;
         height: 35rem;
         position: absolute;
         top: 0;
