@@ -310,19 +310,18 @@ p{
     .imagen1,
     .imagen2 {
         order: -2; 
-        width: 100%; 
+        max-width: 100%; 
+        height: auto;
         margin-bottom: 1rem; 
     }
 
     .texto1,
     .texto2 {
-        display: block;
+        display: flex;
         order:1;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        align-items: center;
+        width: 80%;
         text-align: justify; 
-        width: 80%; 
+        margin-top: 1rem;
         margin-bottom: 1rem; 
     }
 
@@ -339,6 +338,12 @@ p{
 
     .contenedorUltimoParrafo {
         text-align: center; 
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 3rem;
+        font-size: x-large;
     }
     .mapa{
         width: 80%;
