@@ -19,20 +19,6 @@ html{
 .fondoAzul{
     background-color: #84a98c
 }
-/*
-#fondoEncabezado{
-    position: sticky;
-    background-color: #84a98c;
-    height: 10rem;
-}
-
-#fondoPantalla{
-    background-color: #cad2c5;
-}
-.fondoAzul{
-    background-color: #52796f
-}
-*/
 
 .imagenFavicon{
     border-radius:30px;
@@ -136,6 +122,9 @@ p{
     font-size: 2.5rem;
 }
 
+
+/*-------------HOME-------------*/
+
 .seccion{
     display: flex;
     justify-content: center;
@@ -185,8 +174,6 @@ p{
     margin-bottom: 1rem;
 }
 
-/*------------------------*/
-
 
 .h1footer{
     font-size: small;
@@ -199,7 +186,8 @@ p{
 
 .contenedorUltimoParrafo{
     width: 60rem;
-    display: flex;
+    display: inline-block;
+    justify-content: space-between;
     text-align: justify;
     margin-top: 1rem;
     margin-left: 2.5rem;
@@ -263,7 +251,7 @@ p{
     margin-bottom: 2rem;
 }
 
-/*-------PRIMER PAGINA RESPONSIVE-----*/
+/*-------RESPONSIVE-----*/
 /*--tablets--*/
 @media screen and (max-width: 768px) and (min-width:501px) {
     .imagen1,
@@ -280,12 +268,6 @@ p{
         height: auto;
     }
     
-    .seccion1{
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-    }
-
     
     .mapa{
 
@@ -395,6 +377,162 @@ p{
     margin-top: 1rem;
     border-radius: 1rem;
 }
+
+
+
+/*------------pagina estudios--------*/
+
+.estudios{
+    background-color: whitesmoke;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+
+.imagenFondoDeOjos{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    margin-bottom: 2.5rem;
+    border-radius: 10%;    
+}
+.borderr{
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+
+.parrafoEstudios{
+     margin-left: 5rem;
+    border-right: 5rem;
+    margin-bottom: 5rem;
+    text-align: justify;
+}
+
+
+/*--tablets--*/
+@media screen and (max-width: 768px) and (min-width:501px) {
+    
+    .flexResponsive{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagenFondoDeOjos {
+        display: flex;
+        justify-content: center;
+        width: 30rem;
+        height: 30rem;        
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    .parrafoEstudios {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+        height: auto;
+}
+
+
+/*-----CELULAR---*/
+
+@media screen and (max-width: 500px) {
+    
+    .flexResponsive{
+        display: block;
+        text-align: center;
+    }
+    .imagenFondoDeOjos{
+        display: block;
+        max-width: 100%;
+        margin-left: 1rem;
+        margin-right: auto;
+        border-radius: 10%;
+    
+    }
+    
+    .parrafoEstudios{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+    
+}
+
+
+/*------------pagina patologias--------*/
+
+
+
+.bloque {
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+    border-style:outset ;
+    background-color: white;
+    }
+
+.bloque:hover{
+    width: 60%;
+    -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+    margin-left: 20rem;
+    font-size: x-large;
+}
+
+.titulo{
+    font-size: large;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.parrafo{
+    font-size: medium;
+}
+
+/*-----CELULAR---*/
+
+@media screen and (max-width: 500px) {
+    .bloque {
+        border-radius: 2rem;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+        border-style:outset ;
+        background-color: white;
+        }
+    
+    .bloque:hover{
+        width: 10%;
+        -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+        box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+        margin-left: 5rem;
+        font-size: x-large;
+    }
+    
+    .titulo{
+        font-size: large;
+        font-weight: bold;
+        background-color: whitesmoke;
+    }
+    
+    .parrafo{
+        font-size: medium;
+    }
+  }
+
 /*------------pagina testimonios--------*/
 
 
@@ -482,66 +620,58 @@ p{
     margin-right: 2rem;
 }
 
-/*------------pagina patologias--------*/
-.bloque {
-    border-radius: 2rem;
-    padding: 1rem;
-    margin-top: 1rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-bottom: 2rem;
-    border-style:outset ;
-    background-color: white;
+/*--tablets--*/
+@media screen and (max-width: 768px) and (min-width:501px) {
+    .video1,
+    .video2,
+    .video3,
+    .video4 {
+        margin: auto;
+
+    }
+    .paciente1,
+    .paciente2,
+    .paciente3,
+    .paciente4 {
+        margin: auto;
+        text-align: justify;
+    }
+    
+    .containerVideos{
+        display: block;
     }
 
-.bloque:hover{
-    width: 60%;
-  -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
-  box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
-  margin-left: 20rem;
-  font-size: x-large;
-}
 
-.titulo{
-    font-size: large;
-    font-weight: bold;
-    background-color: white;
-}
-
-.parrafo{
-    font-size: medium;
 }
 
 
-/*------------pagina estudios--------*/
+/*-----CELULAR---*/
 
-.estudios{
-    background-color: whitesmoke;
-    margin-top: 5rem;
-    margin-left: 2.5rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2.5rem;
-    text-decoration: underline;
+@media screen and (max-width: 500px) {
+    .video1,
+    .video2,
+    .video3,
+    .video4 {
+        margin: auto;
+
+    }
+    .paciente1,
+    .paciente2,
+    .paciente3,
+    .paciente4 {
+        margin: auto;
+        text-align: justify;
+    }
+    
+    .containerVideos{
+        display: block;
+    }
+    
+    
+    .containerVideos {
+        display: block;
+    }
+
 }
 
 
-.imagenFondoDeOjos{
-    display: inline-block;
-    margin-top: 3rem;
-    margin-left: 50rem; 
-    margin-right: 2.5rem;
-    margin-bottom: 2.5rem;
-    border-radius: 10%;    
-}
-.borderr{
-    border-radius: 5%;
-    text-decoration: none;
-}
-
-
-.parrafoEstudios{
-     margin-left: 5rem;
-    border-right: 10rem;
-    margin-bottom: 5rem;
-    text-align: justify;
-}
