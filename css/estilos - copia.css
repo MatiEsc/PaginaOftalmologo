@@ -1,0 +1,704 @@
+/*
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+#fondoEncabezado{
+    position: sticky;
+    background-color: #cad2c5;
+    height: 10rem;
+}
+
+#fondoPantalla{
+    background-color:whitesmoke;
+}
+.fondoAzul{
+    background-color: #84a98c
+}
+
+.imagenFavicon{
+    border-radius:30px;
+}*/
+/* ------barra navegacion--------*/
+
+
+.menu {  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.09fr 2fr 0.3fr;
+    grid-template-rows: 0.3fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "logo barraNavegacion vacia";
+        }
+
+
+    .logo { grid-area: logo; 
+        border-radius: 40% ;
+    }
+
+    .barraNavegacion { grid-area: barraNavegacion; 
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    width: 110%;
+    }
+
+    .vacia { grid-area: vacia; }
+
+
+.imagenLogo {
+    display: inline-block;
+    vertical-align: text-top;
+    border-radius: 50px;
+    height: 80px;
+    width: auto;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.flex{
+    display: flex;
+    
+}
+
+.barraMenu{
+    background-color: #cad2c5;
+    border-radius: 30px;
+    width: 70%;
+    -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+    list-style: none;
+    font-size:x-large;
+    margin-top: 2.5rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letraBlanca{
+    color:aliceblue
+}
+
+.letraChica{
+    font-size: x-large;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+h1{
+    background-color: #84a98c;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+}
+
+h2{
+    background-color: #84a98c;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: 2.5rem;
+}
+
+
+/*-------------HOME-------------*/
+
+.seccion{
+    display: flex;
+    justify-content: center;
+}
+
+.imagen1{
+    display: flex;
+    border-radius: 5%;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+.texto1{
+    display: inline-block;
+    width: 60rem;
+    height: 40rem;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.boton1{
+
+    display: inline-block;
+    margin-top: 3rem ;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+    align-items: end;
+    justify-content:flex-start;
+
+}
+.imagen2{
+    display: flex;
+    border-radius: 5%;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.texto2{
+    display: inline-block;
+    width: 60rem;
+    height: 40rem;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+
+.h1footer{
+    font-size: small;
+}
+
+.centrar{
+    text-align: center;
+}
+
+
+.contenedorUltimoParrafo{
+    width: 60rem;
+    display: inline-block;
+    justify-content: space-between;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-left: 2.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 3rem;
+    font-size: x-large;
+}
+/* Etiquetas para los parrafos*/
+
+.contenedor {
+    position: relative;
+}
+
+
+
+
+.contenedorBotonesRedes{
+    margin-top: 1000rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+
+
+.borderr img{
+    width: 5rem;
+    border-radius: 25%;
+
+}
+
+.contenedorWp{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedorWp img{
+    border-radius: 25%;
+}
+
+.fixed{
+    position: fixed;
+}
+.contenedorFooterTitulo{
+    font-size: medium;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*-------RESPONSIVE-----*/
+/*--tablets--*/
+@media screen and (max-width: 768px) and (min-width:501px) {
+    .imagen1,
+    .imagen2 {
+        max-width: 100%;
+        height: auto;        
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .texto1,
+    .texto2 {
+        font-size: small;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .seccion1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mapa{
+        width: 80%;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
+    }
+    .contenedorUltimoParrafo {
+        text-align: center; 
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+/*-----CELULAR---*/
+
+@media screen and (max-width: 500px) {
+    .seccion {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagen1,
+    .imagen2 {
+        order: -2; 
+        max-width: 100%; 
+        height: auto;
+        margin-bottom: 1rem; 
+    }
+
+    .texto1,
+    .texto2 {
+        display: inline-block;
+        order:1;
+        width: 80%;
+        height: fit-content;
+        text-align: justify; 
+        margin-top: 1rem;
+        margin-bottom: 1rem; 
+        overflow-wrap: break-word;
+    }
+
+
+
+    .contenedorUltimoParrafo {
+        text-align: center; 
+        width: 100%;
+        margin-top: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 3rem;
+        font-size: x-large;
+    }
+    .mapa{
+        width: 80%;
+        align-items: center;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
+    }
+}
+
+
+
+/*------------pagina turnos--------*/
+.contenedorFormulario{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: large;
+}
+
+.botonTamanio{
+    font-size: large;
+    background-color: #84a98c;
+    border-color: #84a98c;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.botonTamanio:hover,
+.enviarBtn:hover {
+    background-color: #52796f; 
+    border-color: #52796f; 
+}
+
+
+.cartel{
+    font-size: xx-large;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: whitesmoke;
+    color: black;
+
+}
+.contenedorUltimoParrafoTurnos{
+    
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 40rem;
+    margin-right: 30rem;
+    margin-bottom: 2rem; 
+}
+.contenedorMapsTurnos{
+    display:flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+    border-radius: 5%;
+}
+
+.fuente{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contenedorImagenWA{
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+
+
+
+/*-------RESPONSIVE-----*/
+
+
+/*-----CELULAR---*/
+
+@media screen and (max-width: 500px) {
+    .contenedorMapsTurnos{
+    display:flex;
+    justify-content: center;
+    max-width: 100%;
+    margin:auto;
+    border-radius: 5;
+    }
+}
+    
+
+/*------------pagina estudios--------*/
+
+.estudios{
+    background-color: whitesmoke;
+    margin-top: 5rem;
+    margin-left: 2.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+
+.imagenFondoDeOjos{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+    margin-bottom: 2.5rem;
+    border-radius: 10%;    
+}
+
+
+.parrafoEstudios{
+     margin-left: 5rem;
+    border-right: 5rem;
+    margin-bottom: 5rem;
+    text-align: justify;
+}
+
+
+/*--tablets--*/
+@media screen and (max-width: 768px) and (min-width:501px) {
+    .flexResponsive{
+        display: flex;
+        justify-content: center;
+    }
+    .imagenFondoDeOjos {
+        display: flex;
+        justify-content: center;
+        width: 30rem;
+        height: 30rem;        
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .parrafoEstudios {
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        margin-bottom: 10px;
+        height: auto;
+    }
+}
+
+
+/*-----CELULAR---*/
+
+@media screen and (max-width: 500px) {
+    
+    .flexResponsive{
+        display: block;
+        text-align: center;
+    }
+    .imagenFondoDeOjos{
+        display: block;
+        max-width: 100%;
+        margin-left: 1rem;
+        margin-right: auto;
+        border-radius: 10%;
+    
+    }
+    
+    .parrafoEstudios{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+    }
+    
+}
+
+
+/*------------pagina patologias--------*/
+
+
+
+.bloque {
+    border-radius: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+    border-style:outset ;
+    background-color: white;
+}
+
+.bloque:hover{
+    width: 60%;
+    -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+    margin-left: 20rem;
+    font-size: x-large;
+}
+
+.titulo{
+    font-size: large;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.parrafo{
+    font-size: medium;
+}
+
+/*-----CELULAR---*/
+
+@media screen and (max-width: 500px) {
+    .bloque {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+/*------------pagina testimonios--------*/
+
+
+.containerVideos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "video1 paciente1"
+      "paciente2 video2"
+      "video3 paciente3"
+      "paciente4 video4";
+}
+
+.video1 {
+    grid-area: video1;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+.paciente1 {
+    grid-area: paciente1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40rem;
+    height: auto;
+    margin-left: 2rem;
+}
+
+
+
+.video2 {
+    grid-area: video2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.paciente2 {
+    grid-area: paciente2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.video3 {
+    grid-area: video3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;}
+
+.paciente3 {
+    grid-area: paciente3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40rem;
+    height: auto;
+    margin-left: 2rem;
+}
+
+.video4 {
+    grid-area: video4;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.paciente4 {
+    grid-area: paciente4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+/*--tablets--*/
+@media screen and (max-width: 768px) and (min-width:501px) {
+    .video1,
+    .video2,
+    .video3,
+    .video4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+
+    }
+    .paciente1,
+    .paciente2,
+    .paciente3,
+    .paciente4 {
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+    }
+    
+    .containerVideos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        gap: 1rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "video1"
+            "paciente1"
+            "video2"
+            "paciente2"
+            "video3"
+            "paciente3"
+            "video4"
+            "paciente4";
+    }
+}
+
+
+/*-----CELULAR---*/
+
+@media screen and (max-width: 500px) {
+    .video1,
+    .video2,
+    .video3,
+    .video4 {
+        margin: auto;
+        width: 100%;
+
+    }
+    .paciente1,
+    .paciente2,
+    .paciente3,
+    .paciente4 {
+        width: 100%;
+        margin: auto;
+        text-align: justify;
+    }
+    
+    .containerVideos{
+        display: block;
+    }
+    
+    
+    .containerVideos {
+        display: block;
+    }
+}
+
+
