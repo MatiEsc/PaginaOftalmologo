@@ -1,3 +1,4 @@
+/* ----VARIABLES-----*/
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@ html {
   font-size: 62.5%;
 }
 
+/*---MIXIN--*/
 #fondoEncabezado {
   position: sticky;
   background-color: #cad2c5;
@@ -18,7 +20,7 @@ html {
   background-color: whitesmoke;
 }
 
-.fondoAzul {
+.colorFooter {
   background-color: #84a98c;
 }
 
@@ -110,16 +112,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
+h1, h2 {
   background-color: #84a98c;
   font-family: "Roboto", sans-serif;
   font-size: 2.5rem;
 }
 
-h2 {
-  background-color: #84a98c;
-  font-family: "Roboto", sans-serif;
-  font-size: 2.5rem;
+h3 {
+  text-decoration: underline;
 }
 
 p {
@@ -132,7 +132,7 @@ p {
   justify-content: center;
 }
 
-.imagen1 {
+.imagen1, .imagen2 {
   display: flex;
   border-radius: 5%;
   margin-top: 1rem;
@@ -140,7 +140,7 @@ p {
   margin-bottom: 1rem;
 }
 
-.texto1 {
+.texto1, .texto2 {
   display: inline-block;
   width: 60rem;
   height: 40rem;
@@ -160,21 +160,11 @@ p {
 }
 
 .imagen2 {
-  display: flex;
-  border-radius: 5%;
-  margin-top: 1rem;
   margin-left: 2rem;
-  margin-bottom: 1rem;
 }
 
 .texto2 {
-  display: inline-block;
-  width: 60rem;
-  height: 40rem;
-  text-align: justify;
-  margin-top: 1rem;
   margin-right: 2rem;
-  margin-bottom: 1rem;
 }
 
 .h1footer {
@@ -203,24 +193,19 @@ p {
 }
 
 .contenedorBotonesRedes {
-  margin-top: 1000rem;
   margin-left: 3rem;
   margin-right: 3rem;
 }
 
-.borderr {
+.borderr, .bordert {
   border-radius: 5%;
   text-decoration: none;
 }
-.borderr img {
+.borderr img, .bordert img {
   width: 5rem;
   border-radius: 25%;
 }
 
-.bordert {
-  border-radius: 5%;
-  text-decoration: none;
-}
 .bordert img {
   width: 5rem;
   border-radius: 10%;
@@ -400,7 +385,7 @@ p {
   margin-left: 10rem;
 }
 
-.imagenFondoDeOjos {
+.imagenFondoDeOjos, .parrafoEstudios {
   display: flex;
   justify-content: left;
   margin-top: 3rem;
@@ -412,16 +397,13 @@ p {
 }
 
 .parrafoEstudios {
-  display: flex;
-  font-size: small;
   justify-content: right;
-  margin-top: 3rem;
+  font-size: small;
   text-align: justify;
   border-radius: 2rem;
   padding: 1rem;
   margin-left: 10rem;
   margin-right: 10rem;
-  margin-bottom: 2rem;
   border-style: outset;
   background-color: white;
 }
@@ -432,7 +414,7 @@ p {
     display: flex;
     justify-content: center;
   }
-  .imagenFondoDeOjos {
+  .imagenFondoDeOjos, .parrafoEstudios {
     display: flex;
     justify-content: center;
     width: 30rem;
@@ -454,7 +436,7 @@ p {
     display: block;
     text-align: center;
   }
-  .imagenFondoDeOjos {
+  .imagenFondoDeOjos, .parrafoEstudios {
     display: block;
     max-width: 100%;
     margin-left: 1rem;
@@ -487,15 +469,13 @@ p {
   font-size: x-large;
 }
 
-.titulo {
+.titulo, .titulo1 {
   font-size: x-large;
   font-weight: bold;
   background-color: whitesmoke;
 }
 
 .titulo1 {
-  font-size: x-large;
-  font-weight: bold;
   background-color: white;
 }
 
@@ -520,14 +500,14 @@ p {
   grid-template-areas: "video1 paciente1" "paciente2 video2" "video3 paciente3" "paciente4 video4";
 }
 
-.video1 {
+.video1, .video3, .video2, .video4 {
   grid-area: video1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.paciente1 {
+.paciente1, .paciente3, .paciente2, .paciente4 {
   grid-area: paciente1;
   display: flex;
   justify-content: flex-start;
@@ -537,57 +517,32 @@ p {
   margin-left: 2rem;
 }
 
-.video2 {
+.video2, .video4 {
   grid-area: video2;
-  display: flex;
   justify-content: flex-start;
-  align-items: center;
 }
 
-.paciente2 {
+.paciente2, .paciente4 {
   grid-area: paciente2;
-  display: flex;
   justify-content: flex-end;
-  align-items: center;
-  width: 40rem;
-  height: auto;
   margin-left: auto;
   margin-right: 2rem;
 }
 
 .video3 {
   grid-area: video3;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .paciente3 {
   grid-area: paciente3;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 40rem;
-  height: auto;
-  margin-left: 2rem;
 }
 
 .video4 {
   grid-area: video4;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .paciente4 {
   grid-area: paciente4;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 40rem;
-  height: auto;
-  margin-left: auto;
-  margin-right: 2rem;
 }
 
 /*--tablets--*/

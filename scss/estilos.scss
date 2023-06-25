@@ -1,3 +1,11 @@
+/* ----VARIABLES-----*/
+$colorFondoPantalla: whitesmoke;
+$footerGris: #84a98c;
+$bordeImagenFavicon: 30px;
+$flex: flex;
+$grisEncabezado: #cad2c5;
+$roboto: 'Roboto', sans-serif;
+
 *{
     margin:0;
     padding:0;
@@ -8,26 +16,143 @@ html{
 }
 
 
-#fondoEncabezado{
+/*---MIXIN--*/
+@mixin fondoPantalla{
+    background-color:$colorFondoPantalla;
+}
+
+@mixin fondoEncabezado{
     position: sticky;
-    background-color: #cad2c5;
+    background-color: $grisEncabezado;
     height: 10rem;
     opacity: 1;
 }
 
-#fondoPantalla{
-    background-color:whitesmoke;
+@mixin barraMenu{
+    background-color: $grisEncabezado;
+    border-radius: 30px;
+    width: 70%;
+    -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+    box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
+    list-style: none;
+    font-size:x-large;
+    margin-top: 2.5rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
 }
-.fondoAzul{
-    background-color: #84a98c
+
+@mixin imagenLogo{
+    display: inline-block;
+    vertical-align: text-top;
+    border-radius: 50px;
+    height: 80px;
+    width: auto;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+
+@mixin formatoTitulo{
+    background-color: $footerGris;
+    font-family: $roboto;
+    font-size: 2.5rem;
+}
+
+@mixin imagen1{
+    display: flex;
+    border-radius: 5%;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+@mixin texto1{
+    display: inline-block;
+    width: 60rem;
+    height: 40rem;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+@mixin boton1{
+    display: inline-block;
+    margin-top: 3rem ;
+    margin-left: 20rem;
+    margin-bottom: 5rem;
+    align-items: end;
+    justify-content:center;
+}
+
+@mixin cartel{
+    font-size: xx-large;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color:$colorFondoPantalla;
+    color: black;
+}
+
+@mixin contenedorMapsTurnos ($display, $justify-content, $margin-top, $border-radius){
+    display:$display;
+    justify-content: $justify-content;
+    margin-top: $margin-top;
+    border-radius: $border-radius;
+}
+
+@mixin titulo{
+    font-size: x-large;
+    font-weight: bold;
+    background-color: $colorFondoPantalla;
+}
+
+@mixin video1{
+    grid-area: video1;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+
+@mixin paciente1{
+    grid-area: paciente1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40rem;
+    height: auto;
+    margin-left: 2rem;
+}
+
+@mixin contenedorBotonesRedes ($margin-left, $margin-right){
+    
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+}
+
+#fondoEncabezado{
+    @include fondoEncabezado
+}
+
+#fondoPantalla{
+    @include fondoPantalla;
+}
+
+
+.colorFooter{
+    background-color: $footerGris
 }
 
 .imagenFavicon{
-    border-radius:30px;
+    border-radius:$bordeImagenFavicon
 }
 /* ------barra navegacion--------*/
 
-.menu {  position: fixed;
+.menu { position: fixed;
     z-index: 9999;
     top: 0;
     left: 0;
@@ -59,35 +184,15 @@ html{
 
 
 .imagenLogo {
-    display: inline-block;
-    vertical-align: text-top;
-    border-radius: 50px;
-    height: 80px;
-    width: auto;
-    margin-left: 2rem;
-    margin-top: 0.5rem;
+    @include imagenLogo
 }
 
 .flex{
-    display: flex;
+    display: $flex
 }
 
 .barraMenu{
-    background-color: #cad2c5;
-    border-radius: 30px;
-    width: 70%;
-    -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
-    box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
-    list-style: none;
-    font-size:x-large;
-    margin-top: 2.5rem;
-    padding-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    display: flex;
-    justify-content: space-between;
-    z-index: 9999;
+    @include barraMenu
 }
 
 
@@ -106,19 +211,15 @@ html{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto
 }
 
-h1{
-    background-color: #84a98c;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem;
+h1,h2{
+    @include formatoTitulo
 }
 
-h2{
-    background-color: #84a98c;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem;
+h3{
+    text-decoration: underline;
 }
 
 p{
@@ -134,48 +235,26 @@ p{
 }
 
 .imagen1{
-    display: flex;
-    border-radius: 5%;
-    margin-top: 1rem;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
+    @include imagen1
 }
 
 .texto1{
-    display: inline-block;
-    width: 60rem;
-    height: 40rem;
-    text-align: justify;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
+    @include texto1
 }
 
 .boton1{
-    display: inline-block;
-    margin-top: 3rem ;
-    margin-left: 20rem;
-    margin-bottom: 5rem;
-    align-items: end;
-    justify-content:center;
+    @include boton1
 }
 
 .imagen2{
-    display: flex;
-    border-radius: 5%;
-    margin-top: 1rem;
+    @extend .imagen1;
     margin-left: 2rem;
-    margin-bottom: 1rem;
 }
 
+
 .texto2{
-    display: inline-block;
-    width: 60rem;
-    height: 40rem;
-    text-align: justify;
-    margin-top: 1rem;
+    @extend .texto1;
     margin-right: 2rem;
-    margin-bottom: 1rem;
 }
 
 .h1footer{
@@ -205,10 +284,9 @@ p{
 }
 
 .contenedorBotonesRedes{
-    margin-top: 1000rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    @include contenedorBotonesRedes( 3rem, 3rem)
 }
+
 
 .borderr{
     border-radius: 5%;
@@ -220,8 +298,7 @@ p{
 }
 
 .bordert{
-    border-radius: 5%;
-    text-decoration: none;
+    @extend .borderr;
     img{
         width: 5rem;
         border-radius: 10%;
@@ -335,7 +412,7 @@ p{
 /*------------pagina turnos--------*/
 
 .contenedorFormulario{
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     display: flex;
     justify-content: center;
     margin-top: 2rem;
@@ -344,8 +421,8 @@ p{
 
 .botonTamanio{
     font-size: large;
-    background-color: #84a98c;
-    border-color: #84a98c;
+    background-color: $footerGris;
+    border-color: $footerGris;
     text-decoration: none;
     color: aliceblue;
     &:hover{
@@ -360,11 +437,7 @@ p{
 }
 
 .cartel{
-    font-size: xx-large;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    background-color: whitesmoke;
-    color: black;
+    @include cartel
 }
 
 .contenedorUltimoParrafoTurnos{    
@@ -376,14 +449,11 @@ p{
 }
 
 .contenedorMapsTurnos{
-    display:flex;
-    justify-content: center;
-    margin-top: 2rem;
-    border-radius: 5%;
+    @include contenedorMapsTurnos(flex, center, 2rem, 5%)
 }
 
 .fuente{
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
 }
 
 .contenedorImagenWA{
@@ -407,10 +477,10 @@ p{
 /*------------pagina estudios--------*/
 
 .estudios{
-    background-color: whitesmoke;
+    background-color: $colorFondoPantalla;
     margin-top: 5rem;
     margin-left: 2.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: $roboto;
     text-decoration: underline;
     margin-left: 10rem;
 }
@@ -429,16 +499,14 @@ p{
 
 
 .parrafoEstudios{
-    display: flex;
-    font-size: small;
+    @extend .imagenFondoDeOjos;
     justify-content: right;
-    margin-top: 3rem;
+    font-size: small;
     text-align: justify;
     border-radius: 2rem;
     padding: 1rem;
     margin-left: 10rem;
     margin-right: 10rem;
-    margin-bottom: 2rem;
     border-style:outset ;
     background-color: white;
 
@@ -515,14 +583,11 @@ p{
 }
 
 .titulo{
-    font-size: x-large;
-    font-weight: bold;
-    background-color: whitesmoke;
+@include titulo()
 }
 
 .titulo1{
-    font-size: x-large;
-    font-weight: bold;
+    @extend .titulo;
     background-color: white;
 }
 
@@ -556,73 +621,49 @@ p{
 }
 
 .video1 {
-    grid-area: video1;
-    display: flex;
-    justify-content: flex-end;
-    align-items:center;
+    @include video1
 }
 
 .paciente1 {
-    grid-area: paciente1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 40rem;
-    height: auto;
-    margin-left: 2rem;
+    @include paciente1
 }
 
+
 .video2 {
+    @extend .video1;
     grid-area: video2;
-    display: flex;
     justify-content: flex-start;
-    align-items: center;
 }
 
 .paciente2 {
+    @extend .paciente1;
     grid-area: paciente2;
-    display: flex;
     justify-content: flex-end;
-    align-items: center;
-    width: 40rem;
-    height: auto;
     margin-left: auto;
     margin-right: 2rem;
 }
 
+
 .video3 {
+    @extend .video1;
     grid-area: video3;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;}
+ }
 
 .paciente3 {
+    @extend .paciente1;
     grid-area: paciente3;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 40rem;
-    height: auto;
-    margin-left: 2rem;
 }
 
+
 .video4 {
+    @extend .video2;
     grid-area: video4;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .paciente4 {
+    @extend .paciente2;
     grid-area: paciente4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 40rem;
-    height: auto;
-    margin-left: auto;
-    margin-right: 2rem;
-}
+ }
 
 /*--tablets--*/
 @media screen and (max-width: 768px) and (min-width:501px) {
