@@ -22,6 +22,9 @@ html {
 
 .colorFooter {
   background-color: #84a98c;
+  position: absolute;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 .imagenFavicon {

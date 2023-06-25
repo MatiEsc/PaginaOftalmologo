@@ -144,7 +144,10 @@ html{
 
 
 .colorFooter{
-    background-color: $footerGris
+    background-color: $footerGris;
+    position: absolute;
+    margin-bottom: 0;
+    width: 100%;
 }
 
 .imagenFavicon{
