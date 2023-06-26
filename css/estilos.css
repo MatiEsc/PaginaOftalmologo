@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ----VARIABLES-----*/
 * {
   margin: 0;
@@ -463,6 +464,7 @@ p {
   margin-bottom: 2rem;
   border-style: outset;
   background-color: white;
+  text-align: justify;
 }
 .bloque:hover {
   width: 60%;
@@ -487,10 +489,13 @@ p {
 }
 
 /*-----CELULAR---*/
-@media screen and (max-width: 500px) {
-  .bloque {
-    margin-left: 1rem;
-    margin-right: 1rem;
+@media screen and (max-width: 768px) {
+  .bloque:hover {
+    width: auto;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-left: 10rem; /* O la posición original que deseas */
+    font-size: initial; /* O el tamaño de fuente original que deseas */
   }
 }
 /*------------pagina testimonios--------*/

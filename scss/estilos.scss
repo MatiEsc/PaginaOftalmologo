@@ -5,8 +5,9 @@ $bordeImagenFavicon: 30px;
 $flex: flex;
 $grisEncabezado: #cad2c5;
 $roboto: 'Roboto', sans-serif;
+$sombraBtn: #52796f;
 
-*{
+* { 
     margin:0;
     padding:0;
 }
@@ -129,7 +130,6 @@ html{
 }
 
 @mixin contenedorBotonesRedes ($margin-left, $margin-right){
-    
     margin-left: $margin-left;
     margin-right: $margin-right;
 }
@@ -429,14 +429,14 @@ p{
     text-decoration: none;
     color: aliceblue;
     &:hover{
-        background-color: #52796f; 
-        border-color: #52796f;    
+        background-color: $sombraBtn; 
+        border-color: $sombraBtn;    
     }
 }
 
 .enviarBtn:hover {
-    background-color: #52796f; 
-    border-color: #52796f; 
+    background-color: $sombraBtn; 
+    border-color: $sombraBtn; 
 }
 
 .cartel{
@@ -576,6 +576,7 @@ p{
     margin-bottom: 2rem;
     border-style:outset ;
     background-color: white;
+    text-align: justify;
     &:hover{
         width: 60%;
         -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
@@ -600,12 +601,19 @@ p{
 
 /*-----CELULAR---*/
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 768px) {
     .bloque {
-        margin-left: 1rem;
-        margin-right: 1rem;
+      &:hover {
+        width: auto;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        margin-left: 10rem; /* O la posición original que deseas */
+        font-size: initial; /* O el tamaño de fuente original que deseas */
+        }
     }
 }
+
 
 /*------------pagina testimonios--------*/
 
