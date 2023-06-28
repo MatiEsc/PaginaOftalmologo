@@ -32,6 +32,8 @@ html{
     font-size:x-large;
     margin-top: 2.5rem;
     padding-top: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-bottom: 0.5rem;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -162,7 +164,6 @@ html{
     grid-template-areas:
         "logo barraNavegacion vacia";
         }
-
 
     .logo { grid-area: logo; 
         border-radius: 40% ;
@@ -597,12 +598,13 @@ p{
 
 @media screen and (max-width: 768px) {
     .bloque {
-      &:hover {
-        width: auto;
-        -webkit-box-shadow: none;
-        box-shadow: none;
-        margin-left: 10rem; /* O la posición original que deseas */
-        font-size: initial; /* O el tamaño de fuente original que deseas */
+        margin: 1rem;
+        &:hover {
+            width: auto;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            margin-left: 0; 
+            font-size: initial; 
         }
     }
 }

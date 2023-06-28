@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* ----VARIABLES-----*/
 * {
   margin: 0;
@@ -90,6 +89,8 @@ html {
   font-size: x-large;
   margin-top: 2.5rem;
   padding-top: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   margin-bottom: 0.5rem;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -490,12 +491,15 @@ p {
 
 /*-----CELULAR---*/
 @media screen and (max-width: 768px) {
+  .bloque {
+    margin: 1rem;
+  }
   .bloque:hover {
     width: auto;
     -webkit-box-shadow: none;
     box-shadow: none;
-    margin-left: 10rem; /* O la posición original que deseas */
-    font-size: initial; /* O el tamaño de fuente original que deseas */
+    margin-left: 0;
+    font-size: initial;
   }
 }
 /*------------pagina testimonios--------*/
