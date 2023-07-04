@@ -56,7 +56,7 @@ html{
 @mixin formatoTitulo{
     background-color: $footerGris;
     font-family: $roboto;
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 @mixin imagen1{
@@ -75,6 +75,7 @@ html{
     margin-top: 1rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
+    margin-top: 4rem;
 }
 
 @mixin boton1{
@@ -249,8 +250,8 @@ a{
     margin-top: 1rem;
     margin-right: 2rem;
     margin-bottom: 1rem;
+    height: 60rem;
     max-width: 30%;
-    height: auto;
     margin-left: auto;
     margin-right: auto;
 }
@@ -463,6 +464,22 @@ a{
         border-color: $sombraBtn;    
     }
 }
+
+.formulario {
+    background-color: $grisEncabezado;
+    box-shadow: -2px -2px 15px 0.5px #000000;
+    display: flex;
+    justify-content: center;
+    border: solid 1px #000000;
+    padding: 5rem;
+    border-radius: 25px;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 5rem;
+    
+}
+
 
 .enviarBtn:hover {
     background-color: $sombraBtn; 
