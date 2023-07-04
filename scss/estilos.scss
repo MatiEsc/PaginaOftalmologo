@@ -25,12 +25,12 @@ html{
 @mixin barraMenu{
     background-color: $grisEncabezado;
     border-radius: 30px;
-    width: 70%;
+    width: 100%;
     -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
     box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
     list-style: none;
     font-size:x-large;
-    margin-top: 2.5rem;
+    margin-top: auto;
     padding-top: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -129,6 +129,9 @@ html{
     margin-right: $margin-right;
 }
 
+
+
+
 #fondoEncabezado{
     @include fondoEncabezado
 }
@@ -222,7 +225,11 @@ h3{
 p{
     font-size: 2.5rem;
 }
-    
+
+a{
+    text-decoration: none;
+    color: grayscale($color: #033b3b);
+}
     
 /*-------------HOME-------------*/
 
@@ -233,6 +240,19 @@ p{
 
 .imagen1{
     @include imagen1
+}
+
+
+.imagen11{
+    display: flex;
+    border-radius: 5%;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    max-width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .texto1{
@@ -281,7 +301,7 @@ p{
 }
 
 .contenedorBotonesRedes{
-    @include contenedorBotonesRedes( 3rem, 3rem)
+    @include contenedorBotonesRedes( 3rem, 3rem);
 }
 
 
@@ -291,6 +311,9 @@ p{
     img{
         width: 5rem;
         border-radius: 25%;
+        &:hover{
+            width: 7rem;
+        }
     }
 }
 
@@ -379,7 +402,7 @@ p{
         order:1;
         width: 80%;
         height: fit-content;
-        text-align: justify; 
+        text-align: left; 
         margin-top: 1rem;
         margin-bottom: 1rem; 
         overflow-wrap: break-word;

@@ -82,12 +82,12 @@ html {
 .barraMenu {
   background-color: #cad2c5;
   border-radius: 30px;
-  width: 70%;
+  width: 100%;
   -webkit-box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
   box-shadow: 4px 7px 37px -2px rgba(0, 0, 0, 0.6);
   list-style: none;
   font-size: x-large;
-  margin-top: 2.5rem;
+  margin-top: auto;
   padding-top: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -131,6 +131,11 @@ p {
   font-size: 2.5rem;
 }
 
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
 /*-------------HOME-------------*/
 .seccion {
   display: flex;
@@ -143,6 +148,18 @@ p {
   margin-top: 1rem;
   margin-right: 2rem;
   margin-bottom: 1rem;
+}
+
+.imagen11 {
+  display: flex;
+  border-radius: 5%;
+  margin-top: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  max-width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .texto1, .texto2 {
@@ -209,6 +226,9 @@ p {
 .borderr img, .bordert img {
   width: 5rem;
   border-radius: 25%;
+}
+.borderr img:hover, .bordert img:hover {
+  width: 7rem;
 }
 
 .bordert img {
@@ -289,7 +309,7 @@ p {
     order: 1;
     width: 80%;
     height: fit-content;
-    text-align: justify;
+    text-align: left;
     margin-top: 1rem;
     margin-bottom: 1rem;
     overflow-wrap: break-word;

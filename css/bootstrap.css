@@ -6031,8 +6031,10 @@ textarea.form-control-lg {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 50%;
+  height: 50%;
   overflow: hidden;
+  justify-content: center;
 }
 .carousel-inner::after {
   display: block;
