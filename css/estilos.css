@@ -456,6 +456,11 @@ a {
   margin-right: 10rem;
   border-style: outset;
   background-color: white;
+  padding-top: 3rem;
+}
+
+.paddingEstudios {
+  padding: 2rem;
 }
 
 /*--tablets--*/
@@ -532,6 +537,7 @@ a {
 
 .parrafo {
   font-size: medium;
+  padding: 3rem;
 }
 
 /*-----CELULAR---*/
@@ -600,6 +606,10 @@ a {
 
 .paciente4 {
   grid-area: paciente4;
+}
+
+.parrafoTestimonios {
+  font-style: italic;
 }
 
 /*--tablets--*/
