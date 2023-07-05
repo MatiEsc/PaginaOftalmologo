@@ -675,6 +675,9 @@ a{
 .titulo1{
     @extend .titulo;
     background-color: white;
+    color: #84a98c;
+    font-weight:bold;
+    text-shadow: 2px 2px 4px rgba(1, 0, 0, 0.1);
 }
 
 .parrafo{
