@@ -360,7 +360,20 @@ a{
         margin-bottom: 10px;
         height: auto;
     }
-
+    
+    .imagen11{
+        display: flex;
+        justify-content: center;
+        border-radius: 5%;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        height: 60rem;
+        width:auto;
+        max-width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     .seccion1{
         flex-direction: column;
         align-items: center;
@@ -409,6 +422,19 @@ a{
         overflow-wrap: break-word;
     }
 
+    .imagen11{
+        display: flex;
+        justify-content: center;
+        border-radius: 5%;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+        height: 60rem;
+        width:auto;
+        max-width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
     .contenedorUltimoParrafo {
         text-align: center; 
         width: 100%;
