@@ -261,16 +261,19 @@ a {
 @media screen and (max-width: 768px) and (min-width: 501px) {
   .imagen1,
   .imagen2 {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-left: 2rem;
+    margin-right: 5rem;
   }
   .texto1,
   .texto2 {
     font-size: small;
     margin-bottom: 10px;
-    height: auto;
+    height: fit-content;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    overflow-wrap: break-word;
   }
   .imagen11 {
     display: flex;
@@ -337,7 +340,7 @@ a {
     margin-bottom: 1rem;
     height: 60rem;
     width: auto;
-    max-width: 100%;
+    max-width: 90%;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -652,6 +655,7 @@ a {
     align-items: center;
     margin: auto;
     width: 100%;
+    padding: 3rem;
   }
   .paciente1,
   .paciente2,
@@ -661,6 +665,7 @@ a {
     width: 100%;
     margin: auto;
     text-align: justify;
+    padding: 3rem;
   }
   .containerVideos {
     display: grid;
@@ -679,6 +684,7 @@ a {
   .video4 {
     margin: auto;
     width: 100%;
+    padding: 2rem;
   }
   .paciente1,
   .paciente2,
@@ -688,6 +694,7 @@ a {
     margin: auto;
     text-align: justify;
     font-size: x-small;
+    padding: 2rem;
   }
   .containerVideos {
     display: block;
